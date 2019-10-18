@@ -40,7 +40,8 @@ def sort_names(unsorted_names):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("There are too few arguments! Please pass a text file to sort.")
+        print("There are too few arguments! Please pass a text file to sort. "
+              "The input shold be (PATH)/Sorting.py (PATH)/input.txt")
         sys.exit()
     elif len(sys.argv) > 2:
         print("There are too many arguments, assuming the first argument: ")
