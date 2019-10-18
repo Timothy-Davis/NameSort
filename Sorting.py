@@ -13,7 +13,7 @@ def sort_names(unsorted_names):
 
         # If stripping the spaces and \n's from an entry leaves an empty string, we can remove it from the list.
         if name_list[index] == '':
-            name_list.remove(name_list[index])
+            unsorted_names.remove(name_list[index])
 
             # If we do remove an entry from the list we can't increment index or else we'll skip next element
             index -= 1
@@ -21,7 +21,7 @@ def sort_names(unsorted_names):
         # If the first character of a name falls out of the ASCII range for English letters, we cannot sort the name.
         elif ord((unsorted_names[index])[0]) < 65 or ord((unsorted_names[index])[0]) > 122:
             nonsortable_name_list.append(unsorted_names[index])
-            unsorted_names.remove(name_list[index])
+            unsorted_names.remove(unsorted_names[index])
 
             # Since we remove the item from the name list, we need to make sure index doesn't increment.
             index -= 1
