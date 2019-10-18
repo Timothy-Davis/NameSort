@@ -13,7 +13,7 @@ def sort_names(unsorted_names):
 
         # If stripping the spaces and \n's from an entry leaves an empty string, we can remove it from the list.
         if name_list[index] == '':
-            unsorted_names.remove(name_list[index])
+            unsorted_names.remove(unsorted_names[index])
 
             # If we do remove an entry from the list we can't increment index or else we'll skip next element
             index -= 1
