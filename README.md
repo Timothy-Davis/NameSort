@@ -33,6 +33,7 @@ Please note the following:
 	- The path to the included UnitTesting.bat file, noted in the README as TestingPath
 
 Edit the included batch file, making the following changes:
+
 	- In the line under the first REM, type the following:
 		ProgramPath "InputPath"
 
@@ -43,6 +44,7 @@ Open the Windows command prompt and type the following:
 	TestingPath
 
 If the output is anything other than "No errors." then there are one of three issues:
+
 	1) The names aren't the same in both text files; this would mean that
 	   there is an issue with the sorting algorithm that is causing the names
 	   to be sorted in the wrong order.*
