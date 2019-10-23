@@ -41,6 +41,7 @@ Edit the included batch file, making the following changes:
 		UTPath .\sorted_names.txt ExpectedOutputPath
 		
 Open the Windows command prompt and type the following:
+	
 	TestingPath
 
 If the output is anything other than "No errors." then there are one of three issues:
