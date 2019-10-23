@@ -9,9 +9,9 @@ if __name__ == "__main__":
 
     got_error = 0
 
-    for name in output_list:
-        if output_list[name] != expected_output[name]:
-            print("Error! Expected " + expected_output_list[name] + ", got " + output_list[name])
+    for index in range(0, len(output_list)):
+        if output_list[index] != (expected_output_list[index]):
+            print("Error! Expected " + expected_output_list[index] + ", got " + output_list[index])
             got_error = 1
 
     if got_error == 0:
