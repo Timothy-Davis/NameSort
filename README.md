@@ -46,7 +46,7 @@ Edit the included batch file, making the following changes:
 		
 Open the Windows command prompt and type the following:
 
-  TestingPath
+	TestingPath
 
 If the output is anything other than "No errors." then there are one of three issues:
 
