@@ -22,11 +22,11 @@ The program will first output a list of names that are non-sortable, if there we
 
 	1) The name began with a foriegn letter/character that was NOT one of 26 letters of the English Alphabet
 	2) The name began with some punctuation mark, number, or any other character whose unicode 
-	   value was not that of an English     letter.
+	   value was not that of an English letter.
 
 Then the program will output a list of names sorted by length, alphabetically. 
 
-# NameSortUT (Unit Test)
+# NameSort Unit Test
 The following are instructions for running the Name Sort Unit Test program.
 
 Please note the following:
@@ -41,13 +41,12 @@ Edit the included batch file, making the following changes:
 
 	- In the line under the first REM, type the following:
 		ProgramPath "InputPath"
-
 	- In the line under the second REM, type the following
 		UTPath .\sorted_names.txt ExpectedOutputPath
 		
 Open the Windows command prompt and type the following:
-	
-	TestingPath
+
+  TestingPath
 
 If the output is anything other than "No errors." then there are one of three issues:
 
