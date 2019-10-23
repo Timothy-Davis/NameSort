@@ -21,7 +21,8 @@ Once both of these are ready, please do the following:
 The program will first output a list of names that are non-sortable, if there were any, for one of the following two reasons:
 
 	1) The name began with a foriegn letter/character that was NOT one of 26 letters of the English Alphabet
-	2) The name began with some punctuation mark, number, or any other character whose unicode value was not that of an English     letter.
+	2) The name began with some punctuation mark, number, or any other character whose unicode 
+	   value was not that of an English     letter.
 
 Then the program will output a list of names sorted by length, alphabetically. 
 
