@@ -41,13 +41,12 @@ Edit the included batch file, making the following changes:
 
 	- In the line under the first REM, type the following:
 		ProgramPath "InputPath"
-
-	- In the line underthe second REM, type the following:
+	- In the line under the second REM, type the following
 		UTPath .\sorted_names.txt ExpectedOutputPath
 		
 Open the Windows command prompt and type the following:
 
-	TestingPath
+  TestingPath
 
 If the output is anything other than "No errors." then there are one of three issues:
 
