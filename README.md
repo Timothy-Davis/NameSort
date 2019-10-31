@@ -29,24 +29,10 @@ Then the program will output a list of names sorted by length, alphabetically.
 # NameSort Unit Test
 The following are instructions for running the Name Sort Unit Test program.
 
-Please note the following:
+First, navigate to the 'Testing' directory.
+Once there, type the following command to run the test:
 
-	- The path to your Sorting.py file, noted in the README as ProgramPath
-	- The path to your input text file, noted in the README as InputPath
-	- The path to your NameSortUT.py file, noted in the README as UTPath
-	- The path to your expected output text file, noted in the README as ExpectedOutputPath
-	- The path to the included UnitTesting.bat file, noted in the README as TestingPath
-
-Edit the included batch file, making the following changes:
-
-	- In the line under the first REM, type the following:
-		ProgramPath "InputPath"
-	- In the line under the second REM, type the following
-		UTPath .\sorted_names.txt ExpectedOutputPath
-		
-Open the Windows command prompt and type the following:
-
-	TestingPath
+	UnitTesting.bat
 
 If the output is anything other than "No errors." then there are one of three issues:
 
