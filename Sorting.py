@@ -1,7 +1,7 @@
 import sys
 
 
-def sort_names(unsorted_names):
+def sort_names(unsorted_names, sort_ption):
     # This list will contain all the names whose first character falls outside of the English alphabet.
     nonsortable_name_list = []
 
@@ -29,8 +29,12 @@ def sort_names(unsorted_names):
         # increment index to keep the loop moving forward
         index += 1
 
-    # Now that pre-requisites are taken care of, we can sort the list by length alphabetically
-    unsorted_names.sort(key=lambda x: (len(x), x))
+    # Now that pre-requisites are taken care of, we can sort the list by length alphabetically asc or desc
+    if sort_ption.lower() == "desc":
+        unsorted_names.sort(key=lambda x: x)
+        unsorted_names.sort(key=lambda x: (len(x)), reverse=True)
+    else:
+        unsorted_names.sort(key=lambda x: (len(x), x))
 
     # If our list of non-sortable names has any values, we'll print it out as well.
     if len(nonsortable_name_list) != 0:
@@ -39,18 +43,18 @@ def sort_names(unsorted_names):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 3:
         print("There are too few arguments! Please pass a text file to sort. "
-              "The input shold be (PATH)/Sorting.py (PATH)/input.txt")
+              "The input should be (PATH)/Sorting.py (PATH)/input.txt (ASC OR DESC)")
         sys.exit()
-    elif len(sys.argv) > 2:
-        print("There are too many arguments, assuming the first argument: ")
+    elif len(sys.argv) > 3:
+        print("There are too many arguments, assuming the first argument, sorting by length alphabetically ascending: ")
 
     # The following lines will be responsible for reading the file.
     name_file = open(sys.argv[1], "r", encoding='utf-8')
     name_list = name_file.readlines();
 
-    sort_names(name_list)
+    sort_names(name_list, sys.argv[2])
 
     # This loop prints the names out on the command line. Eventually will write to a text file.
     for name in name_list:
