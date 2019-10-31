@@ -1,5 +1,5 @@
 # NameSort
-This Python program reads names from a text file and sorts them first by length, then alphabetically.
+This Python program reads names from a text file and sorts them first by length (ascending or descending), then alphabetically.
 
 Instructions for running NameSort on Windows: 
 
@@ -7,16 +7,14 @@ First, you must download a Python3.7 from the official website:
 
 	https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe
 
-Afterwards, make sure you have both Sorting.py and a .txt file that you wish to sort. 
-	** The text file should comtain names sepearated by a new line, i.e one name per line. **
+Afterwards, navigate to the NameSort directory.
 
 Once both of these are ready, please do the following:
 
-	- Open the command prompt.
-	- Copy the Sorting.py file path and paste in in the command line, follow that with a space. 
-	- Copy your .txt file's path, and paste it in the command line after the sorting.py file path.
-		** It should look like <C:\Users\<user>(SORTING.PY FILE PATH) (.TXT FILE PATH) **
-	- Hit enter.
+	If you want the list sorting by length ascending, type:
+		Sorting.py "Sort Me.txt" asc
+	If you want the list sorted by length descending, type:
+		Sorting.py "Sort Me.txt" desc
 
 The program will first output a list of names that are non-sortable, if there were any, for one of the following two reasons:
 
@@ -34,7 +32,7 @@ Once there, type the following command to run the test:
 
 	UnitTesting.bat
 
-If the output is anything other than "No errors." then there are one of three issues:
+If the output is anything other than than two "No errors." then there is one of three issues:
 
 	1) The names aren't the same in both text files; this would mean that
 	   there is an issue with the sorting algorithm that is causing the names
